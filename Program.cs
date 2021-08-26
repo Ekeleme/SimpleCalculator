@@ -23,6 +23,9 @@ namespace SimpleCalculator
             + "\"+\", \"-\", \"/\", \"*\" \nOR type \"Quit\" to Exit application. ");
 
             string sign = Console.ReadLine();
+            double firstInput;
+            double secondInput;
+            double result;
             bool correctSign = true;
 
             while (correctSign)
@@ -30,12 +33,12 @@ namespace SimpleCalculator
                 if (sign == "+")
                 {
                     Console.Write("Enter your first number... ");
-                    int firstInput = Convert.ToInt32(Console.ReadLine());
+                    firstInput = Convert.ToDouble(Console.ReadLine());
 
                     Console.Write("What number should i add to "+ firstInput + "... ");
-                    int secondInput = Convert.ToInt32(Console.ReadLine());
+                    secondInput = Convert.ToDouble(Console.ReadLine());
 
-                    int result = firstInput + secondInput;
+                    result = firstInput + secondInput;
                     Console.WriteLine("Your answer is... " + result);
                     Console.Write("Press the \"Enter\" key to reset...");
                     correctSign = false;
@@ -44,12 +47,12 @@ namespace SimpleCalculator
                 else if (sign == "-")
                 {
                     Console.Write("Enter your first number... ");
-                    int firstInput = Convert.ToInt32(Console.ReadLine());
+                    firstInput = Convert.ToDouble(Console.ReadLine());
 
                     Console.Write("What number should i subtract from "+ firstInput + "... ");
-                    int secondInput = Convert.ToInt32(Console.ReadLine());
+                    secondInput = Convert.ToDouble(Console.ReadLine());
 
-                    int result = firstInput - secondInput;
+                    result = firstInput - secondInput;
                     Console.WriteLine("Your answer is... " + result);
                     Console.Write("Press the \"Enter\" key to reset...");
                     correctSign = false;
@@ -58,12 +61,12 @@ namespace SimpleCalculator
                 else if (sign == "/")
                 {
                     Console.Write("Enter your first number... ");
-                    int firstInput = Convert.ToInt32(Console.ReadLine());
+                    firstInput = Convert.ToDouble(Console.ReadLine());
 
                     Console.Write( firstInput + " divided by what... ");
-                    int secondInput = Convert.ToInt32(Console.ReadLine());
+                    secondInput = Convert.ToDouble(Console.ReadLine());
 
-                    int result = firstInput / secondInput;
+                    result = firstInput / secondInput;
                     Console.WriteLine("Your answer is... " + result);
                     Console.Write("Press the \"Enter\" key to reset...");
                     correctSign = false;
@@ -72,12 +75,12 @@ namespace SimpleCalculator
                 else if (sign == "*")
                 {
                     Console.Write("Enter your first number... ");
-                    int firstInput = Convert.ToInt32(Console.ReadLine());
+                    firstInput = Convert.ToDouble(Console.ReadLine());
 
                     Console.Write(firstInput + " multiplied by... ");
-                    int secondInput = Convert.ToInt32(Console.ReadLine());
+                    secondInput = Convert.ToDouble(Console.ReadLine());
 
-                    int result = firstInput * secondInput;
+                    result = firstInput * secondInput;
                     Console.WriteLine("Your answer is... " + result);
                     Console.Write("Press the \"Enter\" key to reset...");
                     correctSign = false;
